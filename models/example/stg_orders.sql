@@ -1,5 +1,5 @@
 select
-    order_id,  -- It is already named order_id in the source!
+    order_id,  -- NOT id
     user_id,
     status,
     created_at,
