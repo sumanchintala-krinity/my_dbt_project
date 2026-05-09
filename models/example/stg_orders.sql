@@ -1,5 +1,5 @@
 select
-    order_id,  -- NOT id
+    order_id,
     user_id,
     status,
     created_at,

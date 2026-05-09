@@ -1,5 +1,5 @@
 select
-    p.product_id, -- Use the name we defined in stg_products!
+    p.product_id, -- We renamed this in stg_products, so we must use product_id here
     p.name,
     p.category,
     p.brand,
