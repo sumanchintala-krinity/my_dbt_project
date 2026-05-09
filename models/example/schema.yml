@@ -1,38 +1,6 @@
-
-version: 2
-
-models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        data_tests:
-          - unique
-          - not_null
-
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        data_tests:
-          - unique
-          - not_null
-
-  # --- ADD YOUR NEW MODEL CONFIGURATION HERE ---
-  - name: custom_filter
-    description: "Our custom model that filters for ID 1."
-    columns:
-      - name: id
-        description: "The primary key for this table."
-        data_tests:
-          - unique
-          - not_null
-
-# --- ADD YOUR SOURCE CONFIGURATION HERE (No indentation for the word 'sources:') ---
+# --- SOURCE CONFIGURATION ---
 sources:
-  - name: thelook
+  - name: thelook_ecommerce  # <--- Change this from 'thelook' to 'thelook_ecommerce'
     database: bigquery-public-data
     schema: thelook_ecommerce
     tables:
