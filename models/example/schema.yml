@@ -37,3 +37,7 @@ sources:
     schema: thelook_ecommerce
     tables:
       - name: users
+      - name: orders
+      - name: order_items
+      - name: products
+      - name: distribution_centers
