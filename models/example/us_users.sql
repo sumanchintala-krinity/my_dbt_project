@@ -1,7 +1,7 @@
 {{ config(materialized='table') }}
 
 with raw_users as (
-    select * from {{ source('thelook', 'users') }}
+    select * from {{ source('thelook_ecommerce', 'users') }}
 )
 
 select

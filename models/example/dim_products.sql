@@ -7,5 +7,5 @@ select
     p.retail_price,
     dc.name as distribution_center_name
 from {{ ref('stg_products') }} p
-left join {{ source('thelook_ecommerce', 'distribution_centers') }} dc 
+left join {{ source('thelook_ecommerce', 'products') }} dc 
     on p.distribution_center_id = dc.id

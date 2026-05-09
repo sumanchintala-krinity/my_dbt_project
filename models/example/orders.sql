@@ -7,4 +7,4 @@ select
     shipped_at,
     delivered_at,
     num_of_item as item_count
-from {{ source('thelook_ecommerce', 'orders') }}
+from{{ source('thelook_ecommerce', 'orders') }}

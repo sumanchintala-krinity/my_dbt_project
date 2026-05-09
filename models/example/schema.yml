@@ -1,6 +1,5 @@
-# --- SOURCE CONFIGURATION ---
 sources:
-  - name: thelook_ecommerce  # <--- Change this from 'thelook' to 'thelook_ecommerce'
+  - name: thelook_ecommerce  # <--- Make sure this has the _ecommerce suffix
     database: bigquery-public-data
     schema: thelook_ecommerce
     tables:
