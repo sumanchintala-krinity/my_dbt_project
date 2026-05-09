@@ -1,10 +1,8 @@
 select
-    id as order_id,
+    order_id,  -- It is already named order_id in the source!
     user_id,
     status,
-    gender,
     created_at,
-    returned_at,
     shipped_at,
     delivered_at,
     num_of_item
